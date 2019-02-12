@@ -1,11 +1,11 @@
-env: development
-docker_env: vm
-domain: playoff.dev
+env: {{ENV}}
+docker_env: {{DOCKER_ENV}}
+domain: {{PL_DOMAIN}}
 
 iface: wlan0
 force_https: false
 
-install_dir: "/Users/riccardogazzea/.pl"
+install_dir: "{{INSTALL_DIR}}"
 
 docker_user: johny@playlyfe.com
 docker_auth: am9obnk6QSFUQFIjbjRpNXY2
@@ -13,7 +13,7 @@ docker_auth: am9obnk6QSFUQFIjbjRpNXY2
 haproxy:
   check_interval: 5000
 
-redis_host: 127.0.0.1
+redis_host: {{REDIS_HOST}}
 
 postgres:
   user: playlyfe

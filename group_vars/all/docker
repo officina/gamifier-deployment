@@ -11,6 +11,6 @@ postgres_docker_image: "postgres:9.5"
 aufs_package: linux-image-extra-3.19.0-61-generic
 
 memory:
-  gearman: 64M
-  redis: 128M
-  haproxy: 64M
+  gearman: {{MEMORY.GEARMAN}}
+  redis: {{MEMORY.REDIS}}
+  haproxy: {{MEMORY.HAPROXY}}

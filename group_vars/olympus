@@ -1,11 +1,11 @@
 olympus:
 
   mail_service:
-    name: Gmail
-    username: no-reply@playlyfe.com
-    password: g@ltatlas
+    name: {{MAIL_SERVICE.NAME}}
+    username: {{MAIL_SERVICE.USERNAME}}
+    password: {{MAIL_SERVICE.PASSWORD}}
 
-  discourse_sso_secret: anything
+  discourse_sso_secret: {{DISCOURSE_SECRET}}
 
   free_credit: 20
 

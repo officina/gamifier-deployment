@@ -1,0 +1,21 @@
+{
+  "DISCOURSE_SECRET": "TheGodsMustBeCrazy",
+  "MAIL_SERVICE": {
+    "NAME": "SendGrid",
+    "USERNAME": "apikey",
+    "PASSWORD": "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"
+  },
+  "SSH_CONFIG_PATH": "/Users/riccardogazzea/Documents/code/_officina/playoff/deployments/revive/config/ssh_config",
+  "SSH_USER": "ubuntu",
+  "SSH_KEY_PATH": "/Users/riccardogazzea/.ssh/id_rsa",
+  "ENV": "development",
+  "PL_DOMAIN": "playoff.dev",
+  "DOCKER_ENV": "vm",
+  "INSTALL_DIR": "/Users/riccardogazzea/.pl",
+  "REDIS_HOST": "",
+  "MEMORY": {
+    "GEARMAN": "64M",
+    "REDIS": "128M",
+    "HAPROXY": "64M"
+  }
+}

@@ -1,0 +1,78 @@
+# List of hosts
+nat   private_ip_address=10.20.1.4 ansible_ssh_host=rbastion ansible_ssh_user=ec2-user
+olympus1  private_ip_address=10.20.1.50 ansible_ssh_host=rbastion+10.20.1.50 node_dc=dc1 data_volume=no
+olympus2  private_ip_address=10.20.1.51 ansible_ssh_host=rbastion+10.20.1.51 node_dc=dc1 data_volume=no
+
+[mmonit]
+nat
+
+[cluster]
+olympus[1:2]
+
+[postgres]
+olympus1
+
+# NTP Servers
+
+[ntp:children]
+ntp_master
+ntp_slaves
+
+[ntp_master]
+olympus1
+
+[ntp_slaves]
+olympus2
+
+# Blog
+[blog]
+
+# Olympus Applications
+
+[olympus:children]
+apollo
+cerberus
+hermes
+iris
+pegasus
+prometheus
+vulcan
+zeus
+
+[apollo]
+olympus[1:2]
+
+[cerberus]
+olympus[1:2]
+
+[hermes]
+olympus[1:2]
+
+[iris]
+olympus[1:2]
+
+[pegasus]
+olympus[1:2]
+
+[prometheus]
+olympus[1:2]
+
+[vulcan]
+olympus[1:2]
+
+[zeus]
+olympus[1:2]
+
+# Loadbalancer
+
+[loadbalancer]
+olympus[1:2]
+
+[gearman]
+olympus[1:2]
+
+[group1]
+olympus1
+
+[group2]
+olympus2

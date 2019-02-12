@@ -1,4 +1,4 @@
 {
-    "ssh_user": "riccardogazzea",
-    "ssh_key": "/Users/riccardogazzea/.ssh/id_rsa"
+    "ssh_user": "{{SSH_USER}}",
+    "ssh_key": "{{SSH_KEY}}"
 }
