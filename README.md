@@ -55,7 +55,7 @@ iface: wlan0
 force_https: false
 
 alert_emails:
-  - dev+revive@officina.cc
+  - sample@mail.com
 
 mmonit_host: {{MMONIT.HOST}}
 mmonit_user: {{MMONIT.USER}}
@@ -73,8 +73,8 @@ monit_smtp_pass: {{MONIT.SMTP_PASSWORD}}
 
 install_dir: "{{INSTALL_DIR}}"
 
-docker_user: johny@playlyfe.com
-docker_auth: am9obnk6QSFUQFIjbjRpNXY2
+docker_user: mail@docker.com
+docker_auth: dockerauth
 
 haproxy:
   check_interval: 5000
