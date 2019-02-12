@@ -1,0 +1,17 @@
+olympus:
+
+  mail_service:
+    name: Gmail
+    username: no-reply@playlyfe.com
+    password: g@ltatlas
+
+  discourse_sso_secret: anything
+
+  free_credit: 20
+
+  tutorial:
+    client_id: YzA2OTY4NzAtZmI3Yy00YmZiLThiMTQtNDViZGM4ODIxNWUy
+    client_secret: NjM1NThiMmQtMzBlMS00ZTI2LWExYjEtNTkzYTMxYzdkN2E0Y2I5YWE5NjAtZmJlOS0xMWU0LTllNTMtMjE3M2JiYjdlMzdl
+
+  iface: eth0
+  cache_duration: 86400000

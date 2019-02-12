@@ -1,0 +1,6 @@
+prometheus_port: 7800
+apollo_port: 3210
+hermes_port: 3211
+zeus_port: 3212
+iris_port: 3214
+hades_port: 3216

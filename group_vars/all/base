@@ -1,0 +1,23 @@
+env: development
+docker_env: vm
+domain: playoff.dev
+
+iface: wlan0
+force_https: false
+
+install_dir: "/Users/riccardogazzea/.pl"
+
+docker_user: johny@playlyfe.com
+docker_auth: am9obnk6QSFUQFIjbjRpNXY2
+
+haproxy:
+  check_interval: 5000
+
+redis_host: 127.0.0.1
+
+postgres:
+  user: playlyfe
+  password:
+  host: 127.0.0.1
+  port: 5432
+  db: pl_core

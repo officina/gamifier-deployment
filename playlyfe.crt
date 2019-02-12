@@ -1,0 +1,4 @@
+SSL FILE
+createdb -h ro1ed50xzy0emzh.cun1sgyelxsb.eu-west-1.rds.amazonaws.com -U playlyfe -E UTF8 -T template0 --lc-collate=en_US.utf8 --lc-ctype=en_US.utf8 pl_core
+
+

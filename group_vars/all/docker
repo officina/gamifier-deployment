@@ -1,0 +1,16 @@
+docker_registry: registry.playlyfe.com
+docker_package: docker-ce=17.03.1~ce-0~ubuntu-xenial
+
+base_docker_image: "registry.playlyfe.com/platform/base:trusty"
+redis_docker_image: "registry.playlyfe.com/platform/redis:3.0.2"
+olympus_docker_image: "registry.playlyfe.com/platform/olympus:2.0.0"
+gearman_docker_image: "registry.playlyfe.com/platform/gearman:1.1.9"
+haproxy_docker_image: "registry.playlyfe.com/platform/haproxy:1.5.1"
+postgres_docker_image: "postgres:9.5"
+
+aufs_package: linux-image-extra-3.19.0-61-generic
+
+memory:
+  gearman: 64M
+  redis: 128M
+  haproxy: 64M
