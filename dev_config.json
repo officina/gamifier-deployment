@@ -1,4 +1,11 @@
 {
+  "POSTGRES": {
+    "USER": "playlyfe",
+    "PASSWORD": "",
+    "HOST": "",
+    "PORT": "5432",
+    "DB": "pl_core"
+  },
   "DISCOURSE_SECRET": "TheGodsMustBeCrazy",
   "MAIL_SERVICE": {
     "NAME": "SendGrid",
@@ -11,11 +18,10 @@
   "ENV": "development",
   "PL_DOMAIN": "playoff.dev",
   "DOCKER_ENV": "vm",
-  "INSTALL_DIR": "/Users/riccardogazzea/.pl",
-  "REDIS_HOST": "",
   "MEMORY": {
     "GEARMAN": "64M",
     "REDIS": "128M",
     "HAPROXY": "64M"
-  }
+  },
+  "INSTALL_DIR": "/Users/riccardogazzea/.pl"
 }

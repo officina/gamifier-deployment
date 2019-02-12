@@ -1,0 +1,19 @@
+Host rbastion
+    User                   ec2-user
+    HostName               52.30.181.76
+    IdentityFile           ~/.ssh/revive.pem
+    ForwardAgent           yes
+    BatchMode              yes
+    StrictHostKeyChecking  no
+    PasswordAuthentication no
+
+Host rbastion+*
+    ServerAliveInterval    60
+    TCPKeepAlive           yes
+    ProxyCommand           ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -q -A ec2-user@52.30.181.76 nc $(echo %h |cut -d+ -f2) %p
+    ControlMaster          auto
+    ControlPersist         8h
+    User                   ubuntu
+    IdentityFile           ~/.ssh/revive.pem
+    StrictHostKeyChecking  no
+    ForwardAgent           yes

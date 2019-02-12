@@ -1,0 +1,37 @@
+{
+  "MMONIT": {
+    "HOST": "nat",
+    "USER": "monit",
+    "PASSWORD": "officin@123"
+  },
+  "MONIT": {
+    "RUNTIME_USER": "playlyfe",
+    "USER": "admin",
+    "PASSWORD": "Officina001",
+    "SMTP_HOST": "smtp.gmail.com",
+    "SMTP_PORT": "587",
+    "SMTP_USERNAME": "playoff.support@officina.cc",
+    "SMTP_PASSWORD": "6zubRKGLPhCVFn07001"
+  },
+  "DISCOURSE_SECRET": "TheGodsMustBeCrazy",
+  "POSTGRES": {
+    "USER": "playlyfe",
+    "PASSWORD": "scabrous-breeze-dissuade-forfend-lab-probate-sedan-italy-burble",
+    "HOST": "roaa0bhscq3abr.cun1sgyelxsb.eu-west-1.rds.amazonaws.com",
+    "PORT": "5432",
+    "DB": "pl_core"
+  },
+  "MAIL_SERVICE": {
+    "NAME": "SendGrid",
+    "USERNAME": "apikey",
+    "PASSWORD": "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"
+  },
+  "SSH_CONFIG_PATH": "/Users/riccardogazzea/Documents/code/_officina/playoff/deployments/revive/config/ssh_config",
+  "SSH_USER": "ubuntu",
+  "SSH_KEY_PATH": "/Users/riccardogazzea/.ssh/revive.pem",
+  "ENV": "production",
+  "PL_DOMAIN": "playoffgamification.io",
+  "DOCKER_ENV": "local",
+  "INSTALL_DIR": "/Users/riccardogazzea/.pl",
+  "REDIS_HOST": "rer1n2kw6shtjoiq-001.mjtdzt.0001.euw1.cache.amazonaws.com"
+}
