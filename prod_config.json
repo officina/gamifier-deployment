@@ -2,7 +2,7 @@
   "MMONIT": {
     "HOST": "nat",
     "USER": "monit",
-    "PASSWORD": "officin@123"
+    "PASSWORD": "officinamonit123"
   },
   "MONIT": {
     "RUNTIME_USER": "playlyfe",
